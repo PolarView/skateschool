@@ -15,8 +15,7 @@ const IntroductionCards = () => {
           <div className={styles.introductionCardImageWrapper}>
             <Image
               loading="lazy"
-              src="/introductionCards/card1.webp
-              "
+              src="/introductionCards/card1.webp"
               alt="illustation of our school work"
               fill={true}
               className={styles.coverImage}
@@ -36,8 +35,7 @@ const IntroductionCards = () => {
           <div className={styles.introductionCardImageWrapper}>
             <Image
               loading="lazy"
-              src="/introductionCards/card2.webp
-              "
+              src="/introductionCards/card2.webp"
               alt="illustation of our school work"
               fill={true}
               className={styles.coverImage}
@@ -56,8 +54,7 @@ const IntroductionCards = () => {
           <div className={styles.introductionCardImageWrapper}>
             <Image
               loading="lazy"
-              src="/introductionCards/card3.webp
-              "
+              src="/introductionCards/card3.webp"
               alt="illustation of our school work"
               fill={true}
               className={styles.coverImage}
