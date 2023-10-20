@@ -1,0 +1,410 @@
+.mainContainer {
+  margin: 20px 0;
+  overflow: hidden;
+  padding: 40px 20px;
+  width: 100%;
+  font-family: "LibreBaskerville-Regular";
+
+  .sectionTitle {
+    font-size: 40px;
+    color: rgb(59, 36, 192);
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 100px;
+
+    .hashtag {
+      font-size: 32px;
+      color: rgb(21, 4, 120);
+    }
+  }
+
+  .instaWrapper {
+    position: relative;
+    width: 100%;
+    .instaPostsContainer {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      align-items: flex-end;
+      min-height: 350px;
+      justify-content: space-evenly;
+
+      .instaImgWrapper {
+        width: 23%;
+        height: 40vh;
+        min-height: 500px;
+        min-width: 480px;
+        position: relative;
+
+        .socialsImage {
+          object-fit: cover;
+        }
+      }
+
+      .instaImgWrapper:nth-child(1) {
+        transform: rotate(-5deg);
+        margin-bottom: 20px;
+      }
+      .instaImgWrapper:nth-child(2) {
+        transform: rotate(5deg);
+        margin-bottom: 100px;
+      }
+      .instaImgWrapper:nth-child(3) {
+        transform: rotate(-5deg);
+        margin-bottom: 150px;
+      }
+      .instaImgWrapper:nth-child(4) {
+        transform: rotate(5deg);
+        margin-bottom: 150px;
+      }
+    }
+
+    .instaBtnContainer {
+      position: relative;
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+
+      .followInstaBtn {
+        margin-right: 40px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        padding: 10px 40px;
+        font-size: 28px;
+        width: 95%;
+        min-width: 360px;
+        max-width: 1000px;
+        color: rgb(0, 4, 121);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        background-color: rgba(76, 162, 243, 0.7);
+        cursor: pointer;
+        .btnText {
+          margin-right: 10px;
+        }
+
+        &:hover {
+          background-color: rgba(234, 185, 185, 0.544);
+        }
+      }
+    }
+  }
+
+  .communitySection {
+    padding: 40px 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+
+    .communityInfo {
+      width: 45%;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      min-height: 550px;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+
+      .svgQuotationSign {
+        width: 70px;
+        height: 70px;
+        position: relative;
+        align-self: flex-start;
+
+        background-image: url("../../static/images/quotations.svg");
+        background-position: top left;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      .captionInfo {
+        width: 70%;
+        font-size: 40px;
+        line-height: 1.25;
+        margin-bottom: 40px;
+      }
+
+      .groupContainer {
+        padding: 5px;
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+
+        .groupImageContainer {
+          min-width: 90px;
+          min-height: 90px;
+          position: relative;
+          border-radius: 50%;
+          overflow: hidden;
+          margin-right: 20px;
+        }
+
+        .groupLink {
+          font-size: 20px;
+        }
+      }
+    }
+
+    .communityImageContainer {
+      width: 45%;
+      position: relative;
+      min-height: 650px;
+      height: 45vh;
+      filter: brightness(0.9);
+
+      &:hover {
+        filter: brightness(1);
+      }
+
+      .imageFrame {
+        width: 98%;
+        height: 98%;
+        position: absolute;
+        border: 1px solid whitesmoke;
+        background: transparent;
+        top: 1%;
+        left: 1%;
+      }
+    }
+  }
+}
+
+@media (max-width: 2000px) {
+  .mainContainer {
+    .instaWrapper {
+      .instaPostsContainer {
+        flex-wrap: wrap;
+        align-items: normal;
+        .instaImgWrapper {
+          width: 40%;
+        }
+      }
+
+      .instaBtnContainer {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 1700px) {
+  .mainContainer {
+    .communitySection {
+      .communityInfo {
+        .captionInfo {
+          font-size: 32px;
+          width: 90%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .mainContainer {
+    .communitySection {
+      flex-direction: column-reverse;
+      .communityInfo {
+        width: 100%;
+      }
+
+      .communityImageContainer {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .mainContainer {
+    .instaWrapper {
+      .instaPostsContainer {
+        flex-wrap: wrap;
+        align-items: normal;
+        .instaImgWrapper {
+          width: 40%;
+          height: 32vh;
+          min-height: 300px;
+          min-width: 300px;
+        }
+      }
+    }
+
+    .communitySection {
+      .communityImageContainer {
+        height: 30vh;
+        min-height: 300px;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .mainContainer {
+    .instaWrapper {
+      .instaPostsContainer {
+        align-items: center !important;
+        justify-content: center;
+        flex-wrap: wrap;
+        .instaImgWrapper {
+          margin-bottom: 0 !important;
+          width: 40%;
+          height: 25vh;
+          min-width: 160px;
+          min-height: 150px;
+        }
+      }
+      .instaBtnContainer {
+        .followInstaBtn {
+          font-size: 20px;
+        }
+      }
+    }
+
+    .communitySection {
+      .communityInfo {
+        .svgQuotationSign {
+          width: 55px;
+          height: 55px;
+          top: 20px;
+        }
+        .captionInfo {
+          font-size: 26px;
+        }
+
+        .groupContainer {
+          width: 100%;
+          justify-content: center;
+          font-size: 18px;
+
+          .groupLink {
+            text-align: left;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .mainContainer {
+    padding: 5px;
+    .sectionTitle {
+      padding-bottom: 40px;
+    }
+    .instaWrapper {
+      .instaPostsContainer {
+        align-items: center !important;
+        justify-content: center;
+        flex-wrap: wrap;
+        .instaImgWrapper {
+          overflow: hidden;
+          margin-bottom: 0 !important;
+          width: 50%;
+          height: 18vh;
+          min-width: 160px;
+          min-height: 160px;
+        }
+      }
+
+      .instaBtnContainer {
+        margin-top: 10px;
+        padding: 5px;
+        .followInstaBtn {
+          margin-right: 10px;
+          padding: 10px 15px;
+          font-size: 20px;
+        }
+      }
+    }
+
+    .communitySection {
+      padding: 15px;
+      .communityInfo {
+        .svgQuotationSign {
+          width: 55px;
+          height: 55px;
+          top: 30px;
+        }
+
+        .captionInfo {
+          font-size: 20px;
+        }
+
+        .groupContainer {
+          .groupLink {
+            font-size: 15px;
+          }
+        }
+      }
+
+      .communityImageContainer {
+        height: 25vh;
+      }
+    }
+  }
+}
+
+@media (max-width: 370px) {
+  .mainContainer {
+    padding: 5px;
+    .instaWrapper {
+      .instaPostsContainer {
+        align-items: center !important;
+        justify-content: center;
+        flex-wrap: wrap;
+        .instaImgWrapper {
+          overflow: hidden;
+          margin-bottom: 0 !important;
+          width: 48%;
+          height: 16vh;
+          min-width: 140px;
+          min-height: 140px;
+        }
+      }
+
+      .instaBtnContainer {
+        padding: 5px;
+        margin: 5px;
+        .followInstaBtn {
+          margin-right: 10px;
+          padding: 10px 15px;
+          font-size: 18px;
+        }
+      }
+    }
+
+    .communitySection {
+      .communityInfo {
+        .svgQuotationSign {
+          width: 55px;
+          height: 55px;
+          top: 30px;
+        }
+
+        .captionInfo {
+          font-size: 20px;
+        }
+
+        .groupContainer {
+          .groupLink {
+            font-size: 15px;
+          }
+        }
+      }
+
+      .communityImageContainer {
+        height: 25vh;
+      }
+    }
+  }
+}

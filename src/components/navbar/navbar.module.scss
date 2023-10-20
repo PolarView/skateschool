@@ -1,0 +1,186 @@
+@use "../../scss/index" as *;
+
+.container {
+  display: flex;
+  width: 100vw;
+  min-height: 30px;
+  max-height: 75px;
+  padding: 1.5% 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Prata-Regular";
+  color: $white-hue;
+  z-index: 10000000000;
+
+  .activeSection {
+    // color: rgb(0, 183, 244);
+    border-bottom: 1px solid whitesmoke;
+    color: rgb(246, 214, 175);
+  }
+
+  .logo {
+    position: relative;
+    background-image: url("/logo.svg");
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 70px;
+    min-height: 70px;
+    z-index: 9000000000000000;
+  }
+
+  .mobileMenuIcon {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 900px;
+    text-align: center;
+    font-size: 26px;
+    cursor: pointer;
+    margin-left: 160px;
+  }
+
+  .menuButtonsContainer {
+    .menuBtn {
+      font-size: 20px;
+      font-weight: 500;
+      padding: 7px 15px;
+      cursor: pointer;
+      margin-right: 20px;
+      font-size: 26px;
+      background-color: transparent;
+      color: $white-hue;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border-radius: 15px;
+      border: 1px solid $white-hue;
+
+      &:hover {
+        transition: 0.5s;
+      }
+    }
+  }
+
+  .mobileMenuContainer {
+    background-color: $primary-color;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 90000000000000;
+    transform-origin: top;
+
+    .closeIconContainer {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+
+    .mobileMenuLogoContainer {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background-image: url("/logo.svg");
+      background-position: 50% 50%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      min-width: 70px;
+      min-height: 70px;
+    }
+
+    .mobileMenuEnrollBtn {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      text-decoration: underline;
+      transform: translateX(-50%);
+      font-size: 20px;
+    }
+
+    .mobileMenu {
+      width: 80%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .mobileMenuItem {
+        text-align: center;
+        color: $white-hue;
+        font-size: 36px;
+        letter-spacing: 1.3px;
+        cursor: pointer;
+        font-family: "Prata-Regular";
+        padding: 15px 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .container {
+    max-height: none;
+    background-color: transparent !important;
+    padding: 10px;
+
+    .mobileMenuIcon {
+      display: block;
+      padding: 10px;
+    }
+
+    .menu {
+      display: none;
+    }
+
+    .menuButtonsContainer {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 1500px) {
+  .container {
+    background-color: transparent !important;
+    padding: 10px;
+
+    .menu {
+      max-width: 700px;
+      margin-left: 20px;
+      .menuBtn {
+        font-size: 18px;
+      }
+    }
+
+    .menuButtonsContainer {
+    }
+  }
+}
+
+@media (max-width: 1750px) {
+  .container {
+    padding: 1.5% 20px;
+    .menu {
+      font-size: 22px;
+      margin-left: 40px;
+    }
+
+    .menuButtonsContainer {
+      .menuBtn {
+        font-size: 22px;
+      }
+    }
+  }
+}

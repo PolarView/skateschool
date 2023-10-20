@@ -1,0 +1,72 @@
+// FONTS
+// @font-face {
+//   font-family: "LibreBaskerville-Bold";
+//   src: local("LibreBaskerville-Bold"), url("../fonts/LibreBaskerville-Bold.woff") format("woff");
+//   font-weight: bold;
+// }
+
+@font-face {
+  font-family: "LibreBaskerville-Regular";
+  src: local("LibreBaskerville-Regular"),
+    url("../fonts/LibreBaskerville-Regular.woff") format("woff");
+  font-weight: normal;
+}
+
+// @font-face {
+//   font-family: "NotoSerifTC-Medium";
+//   src: local("NotoSerifTC-Medium"), url("../fonts/NotoSerifTC-Medium.woff") format("woff");
+//   font-weight: normal;
+// }
+
+@font-face {
+  font-family: "Prata-Regular";
+  src: local("Prata-Regular"), url("../fonts/Prata-Regular.woff") format("woff");
+  font-weight: normal;
+}
+
+// @font-face {
+//   font-family: "Alice-Regular";
+//   src: local("Alice-Regular"), url("../fonts/Alice-Regular.woff") format("woff");
+//   font-weight: normal;
+// }
+
+// COLORS
+$primary-color: #4361ee;
+$secondary-color: #3a86ff;
+$white-hue: #fffff0;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "LibreBaskerville-Regular";
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.cell-1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.cell-2 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+.cell-3 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.cell-4 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}

@@ -1,0 +1,52 @@
+.mainContainer {
+  padding: 30px 0px;
+  width: 100%;
+  font-family: "Prata-Regular";
+  .sectionTitle {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .starIconsContainer {
+      display: flex;
+      align-items: center;
+      gap: 3px;
+      justify-content: center;
+      padding: 10px;
+    }
+  }
+  .sliderSection {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+    .sliderWrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+
+      .carousel {
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .mainContainer {
+    padding: 15px 0;
+
+    .sectionTitle {
+      font-size: 30px;
+    }
+  }
+}

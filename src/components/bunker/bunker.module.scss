@@ -1,0 +1,155 @@
+.mainContainer {
+  margin: 40px 0;
+  width: 100%;
+  position: relative;
+
+  .sectionIntroductionContainer {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .sectionTitle {
+      text-align: center;
+      font-size: 50px;
+      font-weight: 600;
+      margin: 30px 0;
+
+      .magicWords {
+        color: rgb(137, 69, 201);
+      }
+    }
+
+    .sectionDescription {
+      font-size: 40px;
+      width: 100%;
+      max-width: 1000px;
+      text-align: center;
+      padding: 20px 5px;
+
+      .magicWords {
+        color: rgb(137, 69, 201);
+      }
+
+      .bunkerKeyWord {
+        font-size: 60px;
+        color: rgb(35, 170, 227);
+        font-weight: 700;
+        padding: 20px;
+        letter-spacing: 1.25px;
+      }
+    }
+  }
+
+  .sliderContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-height: 1100px;
+    min-height: 400px;
+
+    .enrollBunkerBtn {
+      position: absolute;
+      top: 5%;
+      right: 10%;
+      padding: 16px 50px;
+      background: transparent;
+      font-size: 26px;
+      transition: all 0.5s;
+      color: rgb(255, 255, 255);
+      font-weight: 600;
+      border-radius: 20px;
+      background-color: rgb(49, 147, 189);
+      letter-spacing: 1.25px;
+      border: none;
+      cursor: pointer;
+
+      &:hover {
+        background-color: antiquewhite;
+
+        border: none;
+        color: black;
+      }
+    }
+
+    .sliderSingleItem {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      max-height: 1100px;
+      min-height: 400px;
+
+      .sliderImage {
+        width: 100%;
+        height: 100%;
+      }
+
+      .slideCaption {
+        position: absolute;
+        bottom: 10%;
+        width: 100%;
+        font-size: 50px;
+        color: aliceblue;
+        text-align: center;
+        z-index: 200;
+      }
+    }
+
+    .sliderSingleItem:after {
+      position: absolute;
+      content: "";
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background: rgb(255, 255, 255);
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 58%, rgba(27, 17, 17, 0.68) 80%);
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .mainContainer {
+    .sectionIntroductionContainer {
+      .sectionTitle {
+        font-size: 30px;
+        margin: 15px 0;
+      }
+      .sectionDescription {
+        font-size: 22px;
+      }
+    }
+
+    .sliderContainer {
+      .enrollBunkerBtn {
+        padding: 16px;
+        font-size: 22px;
+      }
+
+      .sliderSingleItem {
+        .slideCaption {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .mainContainer {
+    .sliderContainer {
+      max-height: 350px;
+      min-height: 350px;
+
+      .sliderSingleItem {
+        max-height: 350px;
+        min-height: 350px;
+      }
+      .enrollBunkerBtn {
+        padding: 10px;
+        font-size: 18px;
+      }
+    }
+  }
+}
