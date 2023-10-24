@@ -97,7 +97,8 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 10px;
     position: relative;
 
     .communityInfo {
@@ -328,7 +329,7 @@
     }
 
     .communitySection {
-      padding: 15px;
+      padding: 5px;
       .communityInfo {
         .svgQuotationSign {
           width: 55px;
@@ -392,7 +393,7 @@
         }
 
         .captionInfo {
-          font-size: 17px;
+          font-size: 15px;
         }
 
         .groupContainer {

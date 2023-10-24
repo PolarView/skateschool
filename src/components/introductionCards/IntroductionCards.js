@@ -6,9 +6,9 @@ const IntroductionCards = () => {
     <section className={styles.introCardsContainer}>
       <div className={styles.intoductionCardsTextWrapper}>
         <h4 className={styles.introductionCardsTitle}>Почему выбирают именно Schoolskate?</h4>
-        <p className={styles.introductionCardsDescription}>
+        {/* <p className={styles.introductionCardsDescription}>
           Причин множество, но мы делимся с вами тремя, самыми близкими нам
-        </p>
+        </p> */}
       </div>
       <div className={styles.introductionCardsWrapper}>
         <div className={styles.intoductionCard}>

@@ -49,13 +49,12 @@
           width: 90%;
           align-items: center;
           justify-content: center;
-          padding: 5px;
-          box-shadow: -1px 9px 16px 11px rgba(0, 0, 0, 0.1);
-          border-radius: 10px;
+          gap: 5px;
+          // box-shadow: -1px 9px 16px 11px rgba(0, 0, 0, 0.1);
+          // border-radius: 10px;
 
           .mentorsName {
             font-size: 40px;
-            padding: 10px 0;
           }
 
           .mentorsAge {
@@ -152,9 +151,19 @@
         padding: 1px;
 
         .itemContainer {
+          .mentorInfoContainer {
+            .mentorsName {
+              font-size: 36px;
+            }
+
+            .mentorsExperience {
+              font-size: 20px;
+            }
+          }
           .mentorItem {
             height: 420px;
             width: 260px;
+            margin: 7px;
 
             .videoContainer {
               height: 420px;
