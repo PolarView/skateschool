@@ -82,8 +82,8 @@ const Pricing = () => {
         <div className={styles.saleText}>
           Скидка на первое занятие любого вида - <br />
           <span>50%</span>
-          <div className={styles.moneyIconSvg}></div>
-          <div className={styles.moneyGuyIconSvg}></div>
+          {/* <div className={styles.moneyIconSvg}></div>
+          <div className={styles.moneyGuyIconSvg}></div> */}
         </div>
       </div>
     </section>

@@ -59,16 +59,18 @@ const Socials = () => {
         <div className={styles.communityInfo}>
           <div className={styles.svgQuotationSign}></div>
           <p className={styles.captionInfo}>
-            Скейтбординг — это стиль жизни. Он помогает избавиться от страха перед падениями и учит
-            преодолевать трудности. Хотите попробовать встать на доску? Приходите в Schoolskate!
-            Наши ученики тренируются не только для своего удовольствия, но и принимают участие в
-            различных соревнованиях по скейтбордингу, где занимают призовые места.
+            Скейтбординг – это не просто спорт, это образ жизни, искусство, и сообщество, где мы
+            находим свободу. Это не просто катание на четырех колесах, это преодоление границ
+            возможного и обретение пути, шаг за шагом. Мы решили открыть эту школу, чтобы поделиться
+            этой страстью и вдохновить других найти в себе силу преодолевать вызовы и расти, как
+            скейтбордисты и как личности. Мы создали не просто школу, а место, где каждый может
+            найти свое место и свою страсть к скейтбордингу."
           </p>
           <div className={styles.groupContainer}>
             <div className={styles.groupImageContainer}>
-              <Image loading="lazy" src="/about/skateCamp.webp" fill alt="our skate group photo" />
+              <Image loading="lazy" src="/socials/socials7.jpg" fill alt="our skate group photo" />
             </div>
-            <div className={styles.groupLink}>Kate Vermilyea, English and psychology major</div>
+            <div className={styles.groupLink}>Роман Чаплеевский, основатель школы</div>
           </div>
         </div>
         <div className={styles.communityImageContainer}>

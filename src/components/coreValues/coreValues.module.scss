@@ -1,6 +1,168 @@
+// .mainContainer {
+//   margin: 100px 0;
+//   position: relative;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   width: 100%;
+//   font-family: "LibreBaskerville-Regular";
+
+//   .sectionTitle {
+//     text-align: center;
+//     font-size: 50px;
+//     font-weight: 600;
+//     margin: 30px 0;
+//   }
+
+//   .upperRowContainer {
+//     width: 94%;
+//     padding: 10px 20px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+
+//     .valueContainer {
+//       display: flex;
+//       align-items: center;
+//       flex-direction: column;
+//       text-align: center;
+//       width: 45%;
+
+//       .iconWrapper {
+//         width: 400px;
+//         height: 400px;
+//         position: relative;
+//       }
+
+//       .valueCaption {
+//         font-size: 36px;
+//         margin: 10px 0;
+//       }
+
+//       .valueDescription {
+//         font-size: 26px;
+//         text-align: center;
+//         min-height: 100px;
+//       }
+//     }
+//   }
+
+//   .bottomRowContainer {
+//     width: 70%;
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-around;
+//     padding: 10px 20px;
+
+//     .valueContainer {
+//       display: flex;
+//       align-items: center;
+//       flex-direction: column;
+//       text-align: center;
+//       width: 45%;
+
+//       .iconWrapper {
+//         width: 400px;
+//         height: 400px;
+//         position: relative;
+//       }
+
+//       .valueCaption {
+//         font-size: 36px;
+//         margin: 10px 0;
+//       }
+
+//       .valueDescription {
+//         font-size: 26px;
+//         text-align: center;
+//         min-height: 100px;
+//       }
+//     }
+//   }
+// }
+
+// @media (max-width: 1400px) {
+//   .mainContainer {
+//     .upperRowContainer {
+//       width: 90%;
+//       padding: 60px 40px;
+//     }
+
+//     .bottomRowContainer {
+//       padding: 30px;
+//       width: 90%;
+//     }
+//   }
+// }
+
+// @media (max-width: 1100px) {
+//   .mainContainer {
+//     margin: 50px 0;
+//     .upperRowContainer {
+//       justify-content: center;
+//       gap: 8%;
+//       width: 90%;
+//       padding: 30px;
+
+//       .valueContainer {
+//         width: 50%;
+
+//         .valueCaption {
+//           min-height: 80px;
+//         }
+//       }
+//     }
+
+//     .bottomRowContainer {
+//       padding: 30px;
+//       justify-content: center;
+//       gap: 8%;
+//       width: 90%;
+
+//       .valueContainer {
+//         width: 50%;
+
+//         .valueCaption {
+//           min-height: 80px;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// @media (max-width: 670px) {
+//   .mainContainer {
+//     margin: 10px 0;
+//     .upperRowContainer {
+//       flex-direction: column;
+//       align-items: center;
+//       justify-content: center;
+//       gap: 50px;
+//       width: 100%;
+//       padding: 30px 10px;
+
+//       .valueContainer {
+//         width: 90%;
+//       }
+//     }
+
+//     .bottomRowContainer {
+//       flex-direction: column;
+//       align-items: center;
+//       justify-content: center;
+//       gap: 60px;
+//       width: 100%;
+//       padding: 30px 10px;
+
+//       .valueContainer {
+//         width: 90%;
+//       }
+//     }
+//   }
+// }
+
 .mainContainer {
   margin: 100px 0;
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,19 +176,19 @@
     margin: 30px 0;
   }
 
-  .upperRowContainer {
-    width: 94%;
-    padding: 10px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  .iconGridContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); // Two columns
+    grid-template-rows: repeat(2, 1fr); // Two rows
+    gap: 15px; // Adjust the gap as needed
 
     .valueContainer {
       display: flex;
-      align-items: center;
       flex-direction: column;
+      align-items: center;
       text-align: center;
-      width: 45%;
+      width: 100%;
+      min-width: 350px;
 
       .iconWrapper {
         width: 400px;
@@ -36,46 +198,28 @@
 
       .valueCaption {
         font-size: 36px;
-        margin: 10px 0;
+        margin-bottom: 20px;
       }
 
       .valueDescription {
         font-size: 26px;
         text-align: center;
-        min-height: 100px;
+        min-height: 300px;
+        max-width: 70%;
       }
     }
   }
+}
 
-  .bottomRowContainer {
-    width: 70%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 10px 20px;
+@media (max-width: 1700px) {
+  .mainContainer {
+    .iconGridContainer {
+      gap: 10px;
 
-    .valueContainer {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      text-align: center;
-      width: 45%;
-
-      .iconWrapper {
-        width: 400px;
-        height: 400px;
-        position: relative;
-      }
-
-      .valueCaption {
-        font-size: 36px;
-        margin: 10px 0;
-      }
-
-      .valueDescription {
-        font-size: 26px;
-        text-align: center;
-        min-height: 100px;
+      .valueContainer {
+        .valueDescription {
+          max-width: 90%;
+        }
       }
     }
   }
@@ -83,14 +227,14 @@
 
 @media (max-width: 1400px) {
   .mainContainer {
-    .upperRowContainer {
-      width: 90%;
-      padding: 60px 40px;
-    }
+    .iconGridContainer {
+      gap: 10px;
 
-    .bottomRowContainer {
-      padding: 30px;
-      width: 90%;
+      .valueContainer {
+        .valueDescription {
+          font-size: 22px;
+        }
+      }
     }
   }
 }
@@ -98,64 +242,31 @@
 @media (max-width: 1100px) {
   .mainContainer {
     margin: 50px 0;
-    .upperRowContainer {
-      justify-content: center;
-      gap: 8%;
-      width: 90%;
-      padding: 30px;
+    .iconGridContainer {
+      gap: 5px;
 
       .valueContainer {
-        width: 50%;
-
-        .valueCaption {
-          min-height: 80px;
-        }
-      }
-    }
-
-    .bottomRowContainer {
-      padding: 30px;
-      justify-content: center;
-      gap: 8%;
-      width: 90%;
-
-      .valueContainer {
-        width: 50%;
-
-        .valueCaption {
-          min-height: 80px;
+        .valueDescription {
+          text-align: left;
+          max-width: 90%;
         }
       }
     }
   }
 }
 
-@media (max-width: 670px) {
+@media (max-width: 800px) {
   .mainContainer {
     margin: 10px 0;
-    .upperRowContainer {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 50px;
-      width: 100%;
-      padding: 30px 10px;
+
+    .iconGridContainer {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
 
       .valueContainer {
-        width: 90%;
-      }
-    }
-
-    .bottomRowContainer {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 60px;
-      width: 100%;
-      padding: 30px 10px;
-
-      .valueContainer {
-        width: 90%;
+        .valueDescription {
+          text-align: center;
+        }
       }
     }
   }

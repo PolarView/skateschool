@@ -65,7 +65,7 @@ const Bunker = () => {
               Скейт-парк находится в пешей доступности от метро Динамо или Аэропорт.
             </p>
           </div>
-          <div className={styles.sliderSingleItem}>
+          {/* <div className={styles.sliderSingleItem}>
             <img
               className={styles.sliderImage}
               alt="our skatepark advantages"
@@ -75,7 +75,7 @@ const Bunker = () => {
             <p className={styles.slideCaption}>
               В скейт-парке есть крутая зона отдыха с настольным теннисом и другими развлечениями
             </p>
-          </div>
+          </div> */}
         </Carousel>
         <div className={styles.enrollBunkerBtn}>Хочу в Бункер!</div>
       </div>

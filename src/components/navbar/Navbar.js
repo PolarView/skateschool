@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "./navbar.module.scss";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { TfiMenu } from "react-icons/tfi";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link as L } from "react-scroll";
 import Link from "next/link";
@@ -102,10 +103,11 @@ const Navbar = ({ isColored }) => {
         </div>
       </div>
       <div className={styles.mobileMenuIcon}>
-        <AiOutlineMenu
+        <TfiMenu
           onClick={() => setIsMobileMenuOpen(true)}
           color={isMobileMenuOpen ? "white" : "#4361ee"}
-          fontSize={40}
+          fontSize={42}
+          fontStyle="900"
         />
       </div>
       <AnimatePresence>
@@ -170,7 +172,7 @@ const Navbar = ({ isColored }) => {
                 }}>
                 <AiOutlineClose fontSize={30} />
               </div>
-              <motion.div className={styles.mobileMenuLogoContainer}></motion.div>
+              {/* <motion.div className={styles.mobileMenuLogoContainer}></motion.div> */}
               <div className={styles.mobileMenuEnrollBtn}>Записаться</div>
             </motion.div>
           </motion.div>

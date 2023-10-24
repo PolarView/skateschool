@@ -74,14 +74,14 @@
         }
 
         .mentorItem {
-          height: 600px;
+          height: 640px;
           width: 400px;
 
           margin: 0 20px;
           position: relative;
 
           .videoContainer {
-            border-radius: 10px 10px 0 0;
+            border-radius: 10px;
             overflow: hidden;
             width: 100%;
             height: 100%;
@@ -153,12 +153,12 @@
 
         .itemContainer {
           .mentorItem {
-            height: 410px;
-            width: 280px;
+            height: 420px;
+            width: 260px;
 
             .videoContainer {
-              height: 410px;
-              width: 280px;
+              height: 420px;
+              width: 260px;
             }
           }
         }
