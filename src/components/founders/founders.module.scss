@@ -153,12 +153,13 @@
 
       .founderImageWrapper {
         width: 100% !important;
-        height: 340px !important;
+        min-height: 540px !important;
       }
 
       .founderDetails {
         width: 100% !important;
         height: 60%;
+        padding: 2px;
 
         .founderName {
           margin: 20px 0;

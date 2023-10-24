@@ -149,6 +149,7 @@
 
         .groupLink {
           font-size: 28px;
+          font-weight: 600;
         }
       }
     }
@@ -271,6 +272,7 @@
     }
 
     .communitySection {
+      min-height: none;
       .communityInfo {
         .svgQuotationSign {
           width: 55px;

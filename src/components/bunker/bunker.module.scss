@@ -88,11 +88,13 @@
       .slideCaption {
         position: absolute;
         bottom: 10%;
-        width: 100%;
+        width: 90%;
         font-size: 50px;
         color: aliceblue;
         text-align: center;
         z-index: 200;
+        left: 50%;
+        transform: translateX(-50%);
       }
     }
 
@@ -138,15 +140,22 @@
 
 @media (max-width: 600px) {
   .mainContainer {
-    .sectionDescription {
+    .sectionIntroductionContainer {
+      .sectionDescription {
+        font-size: 20px;
+        padding: 10px 2px;
+
+        .bunkerKeyWord {
+          font-size: 45px;
+          padding: 5px;
+        }
+      }
       .sectionTitle {
         font-size: 28px;
-      }
-
-      .sectionDescription {
-        font-size: 19px;
+        margin: 0;
       }
     }
+
     .sliderContainer {
       max-height: 350px;
       min-height: 350px;
@@ -154,6 +163,10 @@
       .sliderSingleItem {
         max-height: 350px;
         min-height: 350px;
+
+        .slideCaption {
+          font-size: 18px;
+        }
       }
       .enrollBunkerBtn {
         padding: 10px;
