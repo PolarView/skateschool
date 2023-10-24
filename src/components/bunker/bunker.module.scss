@@ -138,6 +138,15 @@
 
 @media (max-width: 600px) {
   .mainContainer {
+    .sectionDescription {
+      .sectionTitle {
+        font-size: 28px;
+      }
+
+      .sectionDescription {
+        font-size: 19px;
+      }
+    }
     .sliderContainer {
       max-height: 350px;
       min-height: 350px;
