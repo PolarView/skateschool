@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Link as L } from "react-scroll";
 import Link from "next/link";
 import { HiOutlinePencilAlt } from "react-icons/hi";
+import { BiVideo } from "react-icons/bi";
 
 const Navbar = ({ isColored }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -98,8 +99,15 @@ const Navbar = ({ isColored }) => {
         <div className={styles.menuButtonsContainer}>
           <div className={styles.menuBtn}>
             <p>Записаться</p>
-            <HiOutlinePencilAlt fontSize={30} />
+            <HiOutlinePencilAlt fontSize={20} />
           </div>
+
+          <Link style={{ textDecoration: "none" }} href="/translation">
+            <div className={styles.menuBtn}>
+              <p>Трансляция</p>
+              <BiVideo fontSize={20} />
+            </div>
+          </Link>
         </div>
       </div>
       <div className={styles.mobileMenuIcon}>
@@ -174,6 +182,13 @@ const Navbar = ({ isColored }) => {
               </div>
               {/* <motion.div className={styles.mobileMenuLogoContainer}></motion.div> */}
               <div className={styles.mobileMenuEnrollBtn}>Записаться</div>
+              <div className={styles.mobileMenuTranslationBtn}>
+                <Link style={{ textDecoration: "none" }} href="/translation">
+                  <div className={styles.menuBtn}>
+                    <p style={{ color: "white" }}>Трансляция</p>
+                  </div>
+                </Link>
+              </div>
             </motion.div>
           </motion.div>
         )}
