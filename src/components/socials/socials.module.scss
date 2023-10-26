@@ -155,7 +155,7 @@
     }
 
     .communityImageContainer {
-      width: 45%;
+      width: 37%;
       position: relative;
       min-height: 650px;
       height: 45vh;
@@ -218,7 +218,7 @@
       }
 
       .communityImageContainer {
-        width: 100%;
+        width: 55%;
         margin-bottom: 30px;
       }
     }
@@ -273,6 +273,7 @@
 
     .communitySection {
       min-height: none;
+      padding: 10px 0px;
       .communityInfo {
         .svgQuotationSign {
           width: 55px;
@@ -301,6 +302,13 @@
 @media (max-width: 600px) {
   .mainContainer {
     padding: 5px;
+
+    .communitySection {
+      .communityImageContainer {
+        width: 80%;
+      }
+    }
+
     .sectionTitle {
       padding-bottom: 40px;
     }
@@ -333,6 +341,7 @@
     .communitySection {
       padding: 5px;
       .communityInfo {
+        min-height: 350px;
         .svgQuotationSign {
           width: 55px;
           height: 55px;
@@ -341,6 +350,7 @@
 
         .captionInfo {
           font-size: 20px;
+          margin: 0;
         }
 
         .groupContainer {
@@ -349,10 +359,6 @@
           }
         }
       }
-
-      .communityImageContainer {
-        height: 25vh;
-      }
     }
   }
 }
@@ -360,6 +366,7 @@
 @media (max-width: 370px) {
   .mainContainer {
     padding: 5px;
+    margin: 10px 0;
     .instaWrapper {
       .instaPostsContainer {
         align-items: center !important;
@@ -387,10 +394,14 @@
     }
 
     .communitySection {
+      .communityImageContainer {
+        width: 96%;
+      }
+
       .communityInfo {
         .svgQuotationSign {
-          width: 55px;
-          height: 55px;
+          width: 45px;
+          height: 45px;
           top: 30px;
         }
 

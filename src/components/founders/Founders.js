@@ -7,16 +7,19 @@ const Founders = () => {
     <section className={styles.foundersSectionContainer}>
       <h4 className={styles.foundersTitle}>Основатели</h4>
       <div className={styles.founderContainer}>
-        <div className={styles.founderImageWrapper}>
-          <div className={styles.imageFrame}></div>
-          <Image
-            className={styles.founderImage}
-            src="/founders/founder1.webp"
-            alt="first founder of our school"
-            fill={true}
-            loading="lazy"
-          />
+        <div className={styles.founderImageContainer}>
+          <div className={styles.founderImageWrapper}>
+            <div className={styles.imageFrame}></div>
+            <Image
+              className={styles.founderImage}
+              src="/founders/founder1.webp"
+              alt="first founder of our school"
+              fill={true}
+              loading="lazy"
+            />
+          </div>
         </div>
+
         <div className={styles.founderDetails}>
           <div className={styles.founderName}>Роман Чаплеевский</div>
           <p className={styles.founderDescription}>

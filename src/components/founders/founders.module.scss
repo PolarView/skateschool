@@ -25,27 +25,33 @@
     // height: 100vh;
     background-color: rgb(0, 0, 0);
 
-    .founderImageWrapper {
-      width: 50%;
+    .founderImageContainer {
       height: 90vh;
-      position: relative;
-      min-height: 300px;
-      max-width: 650px;
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      .founderImageWrapper {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        min-height: 300px;
+        max-width: 650px;
 
-      .founderImage {
-        // object-fit: cover;
-      }
+        .founderImage {
+          // object-fit: cover;
+        }
 
-      .imageFrame {
-        border: 1px solid whitesmoke;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 90%;
-        height: 90%;
+        .imageFrame {
+          border: 1px solid whitesmoke;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 90%;
+          height: 90%;
 
-        z-index: 10000;
+          z-index: 10000;
+        }
       }
     }
 
@@ -106,18 +112,24 @@
   }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
   .foundersSectionContainer {
     .founderContainer {
       flex-direction: column;
       align-items: center;
       justify-content: center;
 
-      .founderImageWrapper {
+      .founderImageContainer {
         width: 100%;
-        height: 100% !important;
         min-height: 600px !important;
-        max-width: 400px;
+        max-height: 900px;
+        max-width: 600px;
+        .founderImageWrapper {
+          width: 100%;
+          height: 100% !important;
+          min-height: 600px !important;
+          max-width: 600px;
+        }
       }
 
       .founderDetails {
@@ -151,9 +163,14 @@
       justify-content: center;
       margin: 20px 0;
 
-      .founderImageWrapper {
-        width: 100% !important;
-        min-height: 540px !important;
+      .founderImageContainer {
+        max-height: 600px !important;
+
+        .founderImageWrapper {
+          width: 100% !important;
+          height: 100%;
+          max-height: 600px !important;
+        }
       }
 
       .founderDetails {

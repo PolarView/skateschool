@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./numbers.module.scss";
 import { PiStudentDuotone } from "react-icons/pi";
+import { FcOvertime, FcBullish, FcConferenceCall, FcGraduationCap, FcGlobe } from "react-icons/fc";
 
 const Numbers = () => {
   return (
@@ -10,27 +11,27 @@ const Numbers = () => {
         <div className={styles.gridContainer}>
           <div className={styles.grid}>
             <div className={styles.singleItemWrapper}>
-              <PiStudentDuotone fontSize={45} />
+              <FcBullish fontSize={47} />
               <div className={styles.number}>13+</div>
               <p className={styles.caption}>Лет работы</p>
             </div>
             <div className={styles.singleItemWrapper}>
-              <PiStudentDuotone fontSize={45} />
+              <FcOvertime fontSize={47} />
               <div className={styles.number}>80 000+</div>
               <p className={styles.caption}> Часов тренировок</p>
             </div>
             <div className={styles.singleItemWrapper}>
-              <PiStudentDuotone fontSize={45} />
+              <FcGraduationCap fontSize={47} />
               <div className={styles.number}>300+</div>
               <p className={styles.caption}> Учеников Schoolskate</p>
             </div>
             <div className={styles.singleItemWrapper}>
-              <PiStudentDuotone fontSize={45} />
+              <FcConferenceCall fontSize={47} />
               <div className={styles.number}>20+</div>
               <p className={styles.caption}> Участников соревнований</p>
             </div>
             <div className={styles.singleItemWrapper}>
-              <PiStudentDuotone fontSize={45} />
+              <FcGlobe fontSize={47} />
               <div className={styles.number}>10+</div>
               <p className={styles.caption}> Победителей контестов</p>
             </div>
