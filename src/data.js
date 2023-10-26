@@ -188,7 +188,7 @@ const mentorsData = [
     description:
       "описание будет здесь описание будет здесь описание будет здесь мописание будет здесьописание будет здесьописание будет здесьописание будет здесьописание будет здесьописание будет здесьммы",
     video: "/mentors/mentor1.mp4",
-    thumb: "mentors/mentor-thumb1.webp"
+    thumb: "founders/founder1.webp"
   },
   {
     id: 1,
