@@ -39,3 +39,11 @@
   background: rgb(255, 255, 255);
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 58%, rgba(27, 17, 17, 0.68) 80%);
 }
+
+@media (max-width: 1000px) {
+  .sliderContainer {
+    .sectionCaption {
+      font-size: 34px;
+    }
+  }
+}
