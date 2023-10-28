@@ -5,7 +5,7 @@ import Image from "next/image";
 const CoreValues = () => {
   return (
     <div className={styles.mainContainer}>
-      <div className={styles.sectionTitle}>Наши ценности</div>
+      <div className={styles.sectionTitle}> Что мы ценим</div>
       <div className={styles.iconGridContainer}>
         <div className={styles.valueContainer}>
           <div className={styles.iconWrapper}>

@@ -1,3 +1,4 @@
+@use "../../scss/index" as *;
 .mainContainer {
   margin: 20px 0;
   overflow: hidden;
@@ -69,24 +70,23 @@
         margin-right: 40px;
         margin-top: 10px;
         margin-bottom: 20px;
-        padding: 10px 40px;
+        padding: 10px 10px;
         font-size: 28px;
-        width: 95%;
-        min-width: 360px;
-        max-width: 1000px;
-        color: rgb(0, 4, 121);
+        width: 90%;
+        min-width: 300px;
+        max-width: 700px;
+        color: $white-hue;
         display: flex;
         align-items: center;
         justify-content: center;
         border-radius: 10px;
-        background-color: rgba(76, 162, 243, 0.7);
+        background-color: rgb(35, 170, 227);
         cursor: pointer;
         .btnText {
           margin-right: 10px;
         }
 
         &:hover {
-          background-color: rgba(234, 185, 185, 0.544);
         }
       }
     }

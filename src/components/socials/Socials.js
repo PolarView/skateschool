@@ -50,7 +50,7 @@ const Socials = () => {
         </div>
         <div className={styles.instaBtnContainer}>
           <div className={styles.followInstaBtn}>
-            <p className={styles.btnText}>Следите за нами @schoolskate </p>
+            <p className={styles.btnText}>Следите за новостями </p>
             <BiLinkExternal fontSize={28} />
           </div>
         </div>
