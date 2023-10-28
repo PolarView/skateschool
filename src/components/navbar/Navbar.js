@@ -181,11 +181,14 @@ const Navbar = ({ isColored }) => {
                 <AiOutlineClose fontSize={30} />
               </div>
               {/* <motion.div className={styles.mobileMenuLogoContainer}></motion.div> */}
-              <div className={styles.mobileMenuEnrollBtn}>Записаться</div>
-              <div className={styles.mobileMenuTranslationBtn}>
+              <div className={styles.additionalButtonsContainer}>
+                <div className={`${styles.mobileMenuEnrollBtn} ${styles.additionalButton}`}>
+                  Записаться
+                </div>
+
                 <Link style={{ textDecoration: "none" }} href="/translation">
-                  <div className={styles.menuBtn}>
-                    <p style={{ color: "white" }}>Трансляция</p>
+                  <div className={`${styles.mobileMenuTranslationBtn} ${styles.additionalButton}`}>
+                    <p>Трансляция</p>
                   </div>
                 </Link>
               </div>

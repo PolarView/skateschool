@@ -88,6 +88,7 @@
     left: 0;
     z-index: 90000000000000;
     transform-origin: top;
+    padding-bottom: 60px;
 
     .closeIconContainer {
       position: absolute;
@@ -107,24 +108,32 @@
       min-height: 70px;
     }
 
-    .mobileMenuEnrollBtn {
+    .additionalButtonsContainer {
       position: absolute;
-      bottom: 3%;
+      bottom: 12%;
       left: 50%;
-      text-decoration: underline;
       transform: translateX(-50%);
-      font-size: 20px;
-      margin: 5px;
-    }
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      font-weight: 600;
 
-    .mobileMenuTranslationBtn {
-      position: absolute;
-      bottom: 7%;
-      left: 50%;
-      text-decoration: underline;
-      transform: translateX(-50%);
-      font-size: 20px;
-      margin: 5px;
+      .additionalButton {
+        color: $primary-color;
+        background-color: $white-hue;
+        font-size: 22px;
+        margin: 5px;
+        padding: 5px 17px;
+        border-radius: 20px;
+      }
+
+      .mobileMenuEnrollBtn {
+      }
+
+      .mobileMenuTranslationBtn {
+      }
     }
 
     .mobileMenu {
