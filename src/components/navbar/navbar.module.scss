@@ -214,3 +214,20 @@
     }
   }
 }
+
+@media (max-width: 1000px) {
+  .container {
+    background-color: transparent !important;
+    padding: 10px;
+
+    .mobileMenuContainer {
+      .additionalButtonsContainer {
+        bottom: 8%;
+
+        .additionalButton {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

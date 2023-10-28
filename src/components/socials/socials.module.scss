@@ -159,11 +159,6 @@
       position: relative;
       min-height: 650px;
       height: 45vh;
-      filter: brightness(0.9);
-
-      &:hover {
-        filter: brightness(1);
-      }
 
       .imageFrame {
         width: 98%;

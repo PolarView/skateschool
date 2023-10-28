@@ -68,7 +68,7 @@ const Socials = () => {
           </p>
           <div className={styles.groupContainer}>
             <div className={styles.groupImageContainer}>
-              <Image loading="lazy" src="/socials/socials7.jpg" fill alt="our skate group photo" />
+              <Image loading="lazy" src="/socials/socials7.webp" fill alt="our skate group photo" />
             </div>
             <div className={styles.groupLink}>Роман Чаплеевский, основатель школы</div>
           </div>

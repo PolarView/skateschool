@@ -5,7 +5,7 @@ const IntroductionCards = () => {
   return (
     <section className={styles.introCardsContainer}>
       <div className={styles.intoductionCardsTextWrapper}>
-        <h4 className={styles.introductionCardsTitle}>Почему выбирают именно Schoolskate?</h4>
+        <h4 className={styles.introductionCardsTitle}>Чем выделяеться Schoolskate?</h4>
         {/* <p className={styles.introductionCardsDescription}>
           Причин множество, но мы делимся с вами тремя, самыми близкими нам
         </p> */}
