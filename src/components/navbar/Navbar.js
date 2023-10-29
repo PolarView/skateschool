@@ -89,7 +89,7 @@ const Navbar = ({ isColored }) => {
         </div>
 
         <L smooth offset={-100} activeClass={styles.activeSection} spy to="mentors">
-          <p>Тренера</p>
+          <p>Тренеры</p>
         </L>
         <L smooth offset={-100} activeClass={styles.activeSection} spy to="faqs">
           <p>Вопросы</p>
@@ -156,7 +156,7 @@ const Navbar = ({ isColored }) => {
                 <div style={{ overflow: "hidden" }}>
                   <motion.div variants={menuItemVariants} className={styles.mobileMenuItem}>
                     <L smooth offset={-100} spy to="mentors">
-                      <p onClick={() => setIsMobileMenuOpen(false)}>Тренера</p>
+                      <p onClick={() => setIsMobileMenuOpen(false)}>Тренеры</p>
                     </L>
                   </motion.div>
                 </div>

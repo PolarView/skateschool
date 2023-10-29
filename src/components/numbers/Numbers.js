@@ -7,7 +7,7 @@ const Numbers = () => {
   return (
     <section className={styles.container}>
       <div className={styles.filterContainer}>
-        <h4 className={styles.sectionTitle}>Мы в цифрах!</h4>
+        <h4 className={styles.sectionTitle}>Что говорят цифры ?</h4>
         <div className={styles.gridContainer}>
           <div className={styles.grid}>
             <div className={styles.singleItemWrapper}>

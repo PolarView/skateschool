@@ -67,9 +67,9 @@ export default function Home() {
       </section>
 
       <Socials />
-      <Numbers />
 
       <Reviews />
+      <Numbers />
       <section id="faqs">
         <Faqs />
       </section>

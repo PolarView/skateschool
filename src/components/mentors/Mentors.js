@@ -43,7 +43,12 @@ const Mentors = () => {
 
   return (
     <section className={styles.mainContainer}>
-      <h3 className={styles.titleSection}>Тренера</h3>
+      <h3 className={styles.titleSection}>Тренеры</h3>
+      <p className={styles.descriptionSection}>
+        В нашей команде работают, только проверенные и опытные тренера со стажем работы более
+        нескольких лет но,
+        <span className={styles.magicWords}> выбирать с кем заниматься только вам.</span>
+      </p>
       <motion.div className={styles.carousel} ref={carouselRef}>
         <motion.div
           style={{ touchAction: "none" }}
