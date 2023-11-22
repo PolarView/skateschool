@@ -246,10 +246,11 @@
       padding: 0px;
       flex-wrap: wrap;
       .priceSection {
-        width: 98%;
+        width: 100%;
 
         .priceInfoContainer {
-          padding: 5px;
+          padding: 0px;
+
           .trainingTypeTitle {
             font-size: 30px;
           }

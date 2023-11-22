@@ -10,18 +10,6 @@ const page = () => {
         alignItems: "center",
         justifyContent: "center"
       }}>
-      {/* <div style={{ width: "80%", height: "80%" }}>
-        <iframe
-          style={{
-            border: "none",
-            display: "block",
-            width: "100%",
-            height: "100%"
-          }}
-          src="https://rtsp.me/embed/KPbwo57M/"
-          allowFullScreen></iframe>
-      </div> */}
-
       <div>
         <iframe
           style={{
@@ -31,7 +19,7 @@ const page = () => {
             height: "100%"
           }}
           src="https://rtsp.me/embed/G8G2ssks/"
-          allowfullscreen></iframe>
+          allowFullScreen></iframe>
       </div>
     </div>
   );

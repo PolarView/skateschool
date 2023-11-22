@@ -62,9 +62,8 @@
         min-height: 450px;
 
         & p {
-          // background-color: rgb(35, 170, 227);
           background: transparent;
-          backdrop-filter: blur(10px);
+          backdrop-filter: blur(15px);
           border: 1px solid white;
           font-size: 24px;
           opacity: 1;
